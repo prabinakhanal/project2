@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <div class="mb-20">
+        <div class=" ml-24 align-middle p-8 bg-[#ffffff] shadow-cyan-[#F0F0F0] ">
+            <nav class="flex space-x-28">
+
+                <div class=" absolute  h-60 ">
+                    <img src="./image/logo.svg" alt="no image">
+                </div>
+
+                <div class="mr-22 ml-22">
+                    <ul class="flex align-middle pt-5 pl-96 relative">
+                        <li class="pl-40 underline md:underline-offset-8 decoration-4">Home</li>
+                        <li class="pl-8">Work</li>
+                        <li class="pl-8">Services</li>
+                        <li class="pl-8">OurCustomer</li>
+                        <li class="pl-8">Team</li>
+                        <li class="pl-8">Career</li>
+                        <li class="pl-8">Contact</li>
+                    </ul>
+                </div>
+                <div class=" pl-24 relative">
+                    <img src="./image/search.svg" class="pt-6" alt="no image">
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="bg-[#F8F8F8] h-40 mb-20">
+            <h1 class=" text-center pt-16 font-semibold text-3xl">Front End Developer</h1>
+        </div>
+
+
+        <div class="flex mr-40 pr-36">
+            <div class="ml-56">
+                <h1 class="font-semibold text-xl ">Requirements:</h1>
+                <ul class="mt-8 prose">
+                    <li>- Frontend Dev Candidate must possess at least Diploma,
+                        Bachelor's Degree in Engineering (Computer/Telecommunication)
+                        or equivalent.</li>
+                    <li>- At least 1 Year(s) of working experience in the related field is
+                        required for this position.</li>
+                    <li>- Preferably Staff (non-management & non-supervisor) specialized
+                        in IT/Computer - Software or equivalent.</li>
+                </ul>
+
+
+                <h1 class="font-semibold text-xl mt-20 ">Frontend Expertise:</h1>
+                <ul class="mt-8 prose">
+                    <li>- API implementation</li>
+                    <li>- Experience in html, CSS, ReactJS and Angular Framework</li>
+                    <li>- Experience in using Git</li>
+                    <li>- Strong logical and analytical thinking</li>
+                    <li>- Willing to learn new technology</li>
+                    <li>- Fresh Graduated are welcome</li>
+                </ul>
+            </div>
+
+            <div class="h-96 w-12/12 border-2 rounded-xl ml-64 mt-20 pr-14 pb-20 ">
+                <h1 class="font-bold text-2xl text-center pb-8 pt-4">Submit Your Application</h1>
+
+                <div class="ml-10 ">
+                    <label>Full Name</label>
+                    <div class="h-10 w-96 border rounded-xl mb-5 ">
+                    </div>
+                    <label>Email</label>
+                    <div class="h-10 w-96 border rounded-xl mb-5">
+                    </div>
+                    <label>Phone</label>
+                    <div class="h-10 w-96 border rounded-xl mb-5 ">
+                    </div>
+                    <button type="button"
+                        class="h-10 w-96 border rounded-xl  bg-[#686868] text-[#ffffff] ">Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
