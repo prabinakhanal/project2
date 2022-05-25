@@ -35,7 +35,7 @@
 
                 <div class="mr-22 ml-22">
                     <div class="flex align-middle pt-5 pl-96 relative">
-                        <a href="index.html" class="pl-40 underline md:underline-offset-8 decoration-4 ">Home</a>
+                        <a href="index.html" class="pl-40 underline md:underline-offset-8 decoration-4  hover:text-gray-400 active:text-violet-400">Home</a>
                         <a href="#" class="pl-8">Work</a>
                         <a href="#" class="pl-8">Services</a>
                         <a href="#" class="pl-8">OurCustomer</a>
@@ -58,7 +58,7 @@
                 </h1>
                 <div class="flex mt-20 ml-12 pr-20">
                     <img src="./image/play.svg" alt="no image" class="mt-20">
-                    <p class="mt-20 prose ">Twiscode specializes in developing
+                    <p class="mt-20 prose">Twiscode specializes in developing
                         high-performing mobile and
                         web applications.</p>
                 </div>
@@ -74,20 +74,23 @@
         </div>
 
 
-        <div class="flex ml-28">
-            <div class="h-60 p-24 ml-40">
-                <img src="./image/rectangle.svg" alt="no image" class="absolute">
-                <input type="text" class="relative h-20 ml-52 pl-5 mt-6 text-center" placeholder="View Details"
-                    readonly>
+        <div class="flex ml-28 mb-52">
+            <div class="h-12/12 w-96 ml-40 mt-24 bg-[url('./image/rectangle.svg')]">
+
+                <a href="#">
+                    <button type="button" class="bg-white ml-60 mt-6 w-40 h-14 font-poppins font-semibold absolute">View
+                        Detail</button>
+                </a>
             </div>
 
 
-            <div class="ml-10">
-                <h1 class="font-bold text-3xl font-poppins pt-28 pl-32 pb-10">What We Do?</h1>
+            <div class="ml-56">
+                <h1 class="font-bold leading-10  text-[#414141] text-3xl font-poppins pt-28 pl-32 pb-10">What We Do?
+                </h1>
                 <div class="flex"><img src="./image/android.svg" alt="no image" class="pl-20 h-5 mt-1">
                     <div class="pl-8 font-semibold text-lg">Mobile Application</div>
                 </div>
-                <p class="pl-32 pr-32 prose">Building mobile applications is never easy.
+                <p class="pl-32 pr-32  font-roboto font-normal prose">Building mobile applications is never easy.
                     P2P lending app ? Logistic App ? E-Commerce App ?
                     We have done them all. Done them all well.
                     Done them all fast.
@@ -95,9 +98,9 @@
 
 
                 <div class="flex"><img src="./image/web.svg" alt="no image" class="pl-20 h-5 mt-10">
-                    <div class="pl-8  mt-9 font-semibold text-lg">Web Application</div>
+                    <div class="pl-8 mt-8 font-semibold text-lg">Web Application</div>
                 </div>
-                <p class="pl-32 pr-32 prose">We can build any web applications you need.
+                <p class="pl-32 pr-32 font-roboto font-normal prose">We can build any web applications you need.
                     A personal blog ? Company Profile ? E-commerce ?
                     or any specific functionalities ? We got you covered!
                     We have a strong team of web developers that can
@@ -107,29 +110,34 @@
             </div>
         </div>
 
-        <div class="flex mt-48 mb-52">
-            <img src="./image/laptop.svg" alt="no imgae" class="absolute h-3/5  w-10/12 ml-72 pl-72 ">
-            <div class="relative h-72 w-1/3 pl-64 ml-64 mt-24 bg-[#ffffff] shadow-md shadow-[#F5F5F5]">
-                <div class="">
-                    <h1 class="font-poppins font-semibold text-3xl text-center mr-20">How We Work?</h1>
-                    <p class="porse mr-20 pt-8">Let's discuss what projects
-                        you have in mind</p>
-                    <button type="button" class="bg-[#686868] border-2 h-14 mt-10 w-56 text-[#ffffff] ">Let's Have a
-                        Coffee</button>
+        <div class=" ml-96 mb-52">
+
+            <div class="bg-[url('./image/laptop.svg')] bg-no-repeat h-96 w-12/12 pl-60 bg-contain bg-right ">
+
+                <div class="h-72 w-1/3 absolute mt-12  bg-[#ffffff] ml-72 shadow-md shadow-[#F0F0F0] ">
+                    <div class="pl-10 ">
+                        <h1 class=" font-poppins font-semibold text-3xl text-[#414141] mr-20">How We Work?</h1>
+                        <p class="porse mr-20 pt-8 text-[#9F9F9F] font-medium pr-10 text-xl">Let's discuss what projects
+                            you have in mind</p>
+                        <button type="button" class="bg-[#4A4A4A] border-2 font-medium h-14 mt-10 w-56 text-[#ffffff] ">Let's Have a
+                            Coffee</button>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="mb-40">
+        <div class="mb-40 text-center">
             <h1 class="font-poppins font-bold text-3xl text-center">Our Customers
                 are our biggest fans</h1>
-            <div class=" ml-80 mt-20  inline-grid  grid-cols-5">
-                <img src="./image/icon1.svg" alt="no image">
+            <div class="mt-20  inline-grid  grid-cols-5 gap-x-1 align-middle">
+                <img src="./image/icon1.svg" alt="no image" class="pl-10">
                 <img src="./image/icon2.svg" alt="no image">
-                <img src="./image/icon3.svg" alt="no image">
-                <img src="./image/icon4.png" alt="no image">
+                <img src="./image/icon3.svg" alt="no image" class="pl-14">
+                <img src="./image/icon4.png" alt="no image" class="pl-8">
                 <img src="./image/icon5.png" alt="no image">
+            </div>
+            <div class=" inline-grid gap-x-0 grid-cols-4 align-middle">
                 <img src="./image/icon6.png" alt="no image">
                 <img src="./image/icon7.png" alt="no image">
                 <img src="./image/icon8.png" alt="no image">
@@ -137,9 +145,9 @@
                 <img src="./image/icon10.png" alt="no image">
                 <img src="./image/icon11.png" alt="no image">
                 <img src="./image/icon12.png" alt="no image">
-                <img src="./image/icon13.png" alt="no image">
+                <img src="./image/icon13.png" alt="no image" class="pl-3">
             </div>
-            <div class="text-center font-semibold pt-5">
+            <div class="text-center font-normal pt-5 text-[#5E5B5B] text-xl">
                 <a href="#">see more</a>
             </div>
         </div>
@@ -184,7 +192,7 @@
                     malesuada. Cursus morbi vel sed ipsum eget tincidunt ultrices.
                 </p>
 
-                <button type="button" class="bg-[#686868] border-2 ml-20 w-28 h-12  text-[#ffffff]">Apply</button>
+                <button type="button" class="bg-[#4A4A4A] border-2 ml-20 w-28 h-12  text-[#ffffff]">Apply</button>
             </div>
         </div>
 
