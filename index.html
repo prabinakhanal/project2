@@ -12,8 +12,9 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-
+                    screens: {
+                        'sm': { 'max': '640px' },
+                        'md': { 'min': '640px', 'max': '991px' },
                     },
                 },
             },
@@ -24,39 +25,39 @@
 
 <body>
     <div>
-        <div class=" ml-24 align-middle p-8 bg-[#ffffff] shadow-cyan-[#F0F0F0] ">
-            <nav class="flex space-x-28">
+        <div class=" align-middle h-28">
+            <nav class="flex flex-col justify-center items-center mx-24 lg:flex-row lg:justify-between ">
 
-                <div class=" absolute  h-60 ">
+                <div class="pl-10 pt-6">
                     <img src="./image/logo.svg" alt="no image">
                 </div>
 
-
-
-                <div class="mr-22 ml-22">
-                    <div class="flex align-middle pt-5 pl-96 relative">
-                        <a href="index.html" class="pl-40 underline md:underline-offset-8 decoration-4  hover:text-gray-400 active:text-violet-400">Home</a>
-                        <a href="#" class="pl-8">Work</a>
-                        <a href="#" class="pl-8">Services</a>
-                        <a href="#" class="pl-8">OurCustomer</a>
-                        <a href="#" class="pl-8">Team</a>
-                        <a href="career.html" class="pl-8">Career</a>
-                        <a href="#" class="pl-8">Contact</a>
-                    </div>
-                </div>
-                <div class=" pl-24 relative">
-                    <img src="./image/search.svg" class="pt-6" alt="no image">
-
+                <div class="pt-5 pr-48">
+                    <ul class="flex flex flex-col font-bold text-[#414141] lg:flex-row lg:items-center">
+                        <li><a href="index.html"
+                                class="underline md:underline-offset-8 decoration-4  hover:text-gray-400 active:text-violet-400 active:underline">Home</a>
+                        </li>
+                        <li><a href="#" class="pl-8">Work</a></li>
+                        <li><a href="#" class="pl-8">Services</a></li>
+                        <li><a href="#" class="pl-8">OurCustomer</a></li>
+                        <li><a href="#" class="pl-8">Team</a></li>
+                        <li><a href="career.html" class="pl-8">Career</a></li>
+                        <li><a href="#" class="pl-8 pr-56">Contact</a></li>
+                        <li>
+                            <a class=""><img src="./image/search.svg" alt="no image">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
 
 
-        <div class="bg-[#F8F8F8] h-2/3 flex top-100">
-            <div class="ml-20 mt-16 mr-96">
-                <h1 class=" absolute ml-12 h-48 w-80 font-poppins font-semibold  text-6xl leading-18">We Code We Deliver
+        <div class="bg-[#F8F8F8] h-2/3 flex flex-col justify-center items-center lg:flex-row lg:justify-between top-100">
+            <div class="ml-20 mt-16 mr-96 text-center lg:text-left">
+                <h1 class="absolute ml-12 h-48 w-80 font-poppins font-bold  text-[#414141] text-4xl leading-18 lg:text-6xl">We Code We Deliver
                 </h1>
-                <div class="flex mt-20 ml-12 pr-20">
+                <div class=" flex mt-20 ml-12 pr-20">
                     <img src="./image/play.svg" alt="no image" class="mt-20">
                     <p class="mt-20 prose">Twiscode specializes in developing
                         high-performing mobile and
@@ -74,7 +75,7 @@
         </div>
 
 
-        <div class="flex ml-28 mb-52">
+        <div class="flex flex-col justify-center items-center lg:flex-row justify-between ml-28 mb-52">
             <div class="h-12/12 w-96 ml-40 mt-24 bg-[url('./image/rectangle.svg')]">
 
                 <a href="#">
@@ -119,7 +120,8 @@
                         <h1 class=" font-poppins font-semibold text-3xl text-[#414141] mr-20">How We Work?</h1>
                         <p class="porse mr-20 pt-8 text-[#9F9F9F] font-medium pr-10 text-xl">Let's discuss what projects
                             you have in mind</p>
-                        <button type="button" class="bg-[#4A4A4A] border-2 font-medium h-14 mt-10 w-56 text-[#ffffff] ">Let's Have a
+                        <button type="button"
+                            class="bg-[#4A4A4A] border-2 font-medium h-14 mt-10 w-56 text-[#ffffff] ">Let's Have a
                             Coffee</button>
                     </div>
                 </div>
@@ -156,7 +158,7 @@
 
         <div class="mb-40">
             <h1 class="font-poppins font-bold text-3xl text-center">Our Team</h1>
-            <div class="flex ml-96 pl-32  mt-20">
+            <div class="flex sm:flex-col justify-center items-center lg:flex-row justify-between ml-96 pl-32  mt-20">
                 <div>
                     <img src="./image/img1.svg" alt="no image" class="rounded-full h-36">
                     <h1 class="font-bold text-2xl text-center pl-2">Elisabeth Be</h1>
@@ -181,7 +183,7 @@
 
         </div>
 
-        <div class="ml-96 flex mb-44">
+        <div class="ml-96 flex sm:flex-col justify-center items-center lg:flex-row justify-between mb-44">
             <div class=" font-bold text-3xl">Join Our Team
                 <img src="./image/team.svg" alt="no image" class="mt-8">
             </div>
@@ -197,7 +199,7 @@
         </div>
 
 
-        <div class="ml-40 mb-40 flex">
+        <div class="ml-40 mb-40 flex sm:flex-col justify-center items-center lg:flex-row justify-between">
             <div>
                 <h1 class="font-poppins font-bold text-2xl pl-56 pb-10">Location</h1>
                 <img src="./image/map.svg" alt="no image" class="absolute h-64 w-1/3">
